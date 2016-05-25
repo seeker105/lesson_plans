@@ -161,7 +161,7 @@ our application in Step 1.
 # in config/initializers/omniauth.rb
 
 Rails.application.config.middleware.use OmniAuth::Builder do
-  provider :twitter, "YOUR_CONSUMER_API_KEY", "YOUR_CONSUMER_API_SECRET"
+  provider :twitter, ENV["YOUR_CONSUMER_API_KEY"], ENV["YOUR_CONSUMER_API_SECRET"]
 end
 ```
 
